@@ -1,6 +1,6 @@
 {
-  "name": "task-handler",
-  "version": "3.0.0",
+  "name": "task-handler-htfx",
+  "version": "3.1.0",
   "description": "Handle Javascript Timers like a boss! https://odo-network.github.io/task-handler/",
   
   "module": "dist-es/index.js",
@@ -38,7 +38,6 @@
     "coverage:tests": "cross-env NODE_ENV=test nyc yarn test && nyc report --reporter=html --reporter=text-lcov | coveralls",
     "coverage:flow": "flow-coverage-report",
     "flow": "flow",
-    "prepublishOnly": "npm-run-all coverage build",
     "test": "cross-env BABEL_ENV=test nyc mocha --require @babel/register --recursive ./tests/tests/*.js",
     "try": "babel-node ./tests/quick-test"
   },
